@@ -1,0 +1,960 @@
+:root {
+	--primary-title-color: #2e2f42;
+	--primary-text-color: #434455;
+	--secondary-background-color: #2e2f42;
+	--hover-link-color: #404bbf;
+}
+/* --------styles reset------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.section {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+/* due to this we can cancell default outline !!!!!!!!!!!!!! */
+input, textarea {
+	outline: none;
+}
+/* ___________________________________________________________ */
+/* --------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #434455;
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	list-style: none;
+}
+
+ul {
+	list-style-type: none;
+}
+/* -------------------------------------------------------head and footer---------------------------------------------- */
+/* ---------logo head------------ */
+.logo-head,
+.logo-footer {
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+}
+.logo-head {
+	color: var(--primary-title-color);
+}
+/* ------------logo footer---------- */
+.logo-footer {
+	color: #f4f4fd;
+}
+.logo-web {
+	color: #4d5ae5;
+}
+
+/* delating outlines of the links  */
+a {
+	text-decoration: none;
+}
+/* ---------- */
+
+.navigation-links .link {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-title-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-links .link:focus,
+.navigation-links .link:hover {
+	color: var(--hover-link-color);
+}
+
+
+.border-header {
+	border-bottom: 1px solid #e7e9fc;
+}
+
+/* changing address font and color */
+.address {
+	font-style: normal;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-text-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address:focus,
+.address:hover {
+	color: var(--hover-link-color);
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------hero section---------------------------------------------------- */
+.hero-section {
+	background-color: var(--secondary-background-color);
+	text-align: center;
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1440px;
+	margin: 0 auto;
+	
+}
+
+.hero-section-title {
+	font-family: Roboto;
+	margin-bottom: 48px;
+	margin-top: 0;
+	min-width: 496px;
+	color: #fff;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+
+.hero-section-button, .send-button-item {
+	padding: 16px 32px;
+
+	min-width: 169px;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	border-style: solid;
+	border-radius: 4px;
+	border: none;
+	background-color: #4d5ae5;
+	color: #fff;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-section-button:hover, .hero-section-button:focus,
+.send-button-item:hover, .send-button-item:focus {
+	background-color: var(--hover-link-color);
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+	cursor: pointer;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+h3 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-title-color);
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-title-color);
+}
+/* section 4 */
+.fourth-section {
+	background-color: #f4f4fd;
+}
+.team-card {
+	background-color: #fff;
+}
+
+/* -------------------------------portfolio------------------------------------ */
+
+.portfolio-title {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-title-color);
+}
+
+/* doing overlay window on card --------------------*/
+.portfolio-card-item {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-card-overlay {
+	background-color: #4d5ae5;
+	color: #f4f4fd;
+
+	padding: 40px 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(100%);
+	transition: transform 0.25s linear;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	overflow: auto;
+}
+
+/* ------------------------------------------------- */
+
+.kind-of-content {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: #434455;
+}
+
+.filters-buttons {
+	padding: 12px 24px;
+	font-family: Roboto;
+	background-color: #f4f4fd;
+	color: #4d5ae5;
+	border-color: #e7e9fc;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.04em;
+
+	transition-property: color, border-color, background-color, box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-buttons:focus,
+.filters-buttons:hover {
+	background-color: var(--hover-link-color);
+	color: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
+
+	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+	border-color: var(--hover-link-color);
+}
+
+/* -------------------FLEX-------------------- */
+.container {
+	width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+body {
+	margin: 0;
+}
+
+.our-work-title {
+	text-align: center;
+	margin-bottom: 72px;
+	margin-top: 0;
+}
+
+.fourth-section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.our-team-title {
+	text-align: center;
+	margin-bottom: 72px;
+	margin-top: 0;
+}
+
+.footer-text {
+	width: 264px;
+}
+
+.logo-footer {
+	display: block;
+	margin-bottom: 16px;
+}
+
+footer {
+	background-color: var(--secondary-background-color);
+	color: #e7e9fc;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.logo-head {
+	display: block;
+	padding-bottom: 24px;
+	padding-top: 24px;
+	margin-left: 0;
+	margin-right: 36px;
+}
+/* -------------flex start--------- */
+
+.navigation-links {
+	display: flex;
+}
+
+.nav-link-item {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 14px;
+	/* i have changed it from 24px to 14px to put blue-line on hero section */
+}
+
+.nav-link-item:last-child {
+	margin-right: 0;
+}
+.nav-link-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.address-link {
+	display: flex;
+}
+.addess-link-item:not(:last-child) {
+	margin-right: 40px;
+}
+.addess-link-item {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.header-line {
+	display: flex;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+/* --------------------------------------------------section 2-3------------------------------------------------ */
+.title-list,
+.visual-list {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	gap: 24px;
+}
+/* -----------------SVG icons section  2---------------------- */
+
+.symbol-list-item {
+	display: flex;
+	height: 112px;
+	width: 264px;
+	background-color: #f4f4fd;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+/* ----------------------------------------------------------- */
+.main-paragraph {
+	width: 264px;
+}
+
+.card-titles {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	padding-left: 0;
+}
+
+.team-card h3 {
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+.team-card p {
+	text-align: center;
+}
+
+.title-list h3 {
+	margin-bottom: 8px;
+}
+
+/* ---------------portfolio flex----------------- */
+.filters {
+	display: flex;
+	margin-bottom: 72px;
+	gap: 24px;
+	justify-content: center;
+}
+
+.portfolio-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	row-gap: 48px;
+}
+
+.portfolio-title h2 {
+	margin-bottom: 8px;
+}
+.portfolio-sign {
+	border-left: 1px solid #e7e9fc;
+	border-right: 1px solid #e7e9fc;
+	border-bottom: 1px solid #e7e9fc;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+
+.portfolio-card-item-list:hover .portfolio-card-overlay {
+	transform: translateY(0);
+}
+
+.portfolio-card-item-list:hover,
+.portfolio-card-item-list:focus {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolios {
+	display: block;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+address {
+	margin-left: auto;
+}
+.hero-section {
+	padding-top: 188px;
+	padding-bottom: 188px;
+}
+
+.section-2 {
+	padding-top: 120px;
+}
+
+.section-3 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.section-portfolio {
+	padding-bottom: 120px;
+	padding-top: 96px;
+}
+
+.portfolio-sign {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
+}
+.team-card-sign {
+	padding-top: 32px;
+	/* padding-bottom: 8px; */
+}
+.team-card {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+}
+/* --------------------------------------svg sectio4------------------------------------- */
+
+.card-social-list {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+	margin-top: 8px;
+	padding-bottom: 32px;
+}
+.card-social-item {
+	width: 40px;
+	height: 40px;
+}
+.card-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #4d5ae5;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-social-link:hover,
+.card-social-link:focus {
+	background-color: #404bbf;
+}
+
+/* ---------------------------------------------section fifth-------------------------------------- */
+.section-fifth {
+	padding-top: 130px;
+	padding-bottom: 120px;
+}
+
+.customers-title {
+	text-align: center;
+	margin-bottom: 72px;
+}
+
+.customers-list {
+	display: flex;
+	justify-content: space-between;
+}
+.customers-list-item {
+	width: 168px;
+	height: 88px;
+	border: 1px solid #8e8f99;
+	border-radius: 4px;
+
+	transition-property: color, border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-list-link {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	color: #8e8f99;
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list-item:hover,
+.customers-list-item:hover .customers-list-link {
+	border-color: #404bbf;
+	color: #404bbf;
+	/* fill: #404bbf; */
+}
+.customers-list-item:focus-within .customers-list-link {
+	border-color: #404bbf;
+	color: #404bbf;
+}
+
+.customers-list-icon {
+	fill: currentColor;
+}
+
+
+/* --------------------------------------footer section------------------------------------ */
+
+.footer-line {
+	display: flex;
+}
+.social-media {
+	margin-left: 120px;
+}
+.social-media-title {
+	margin-bottom: 16px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+.social-media-list {
+	display: flex;
+	gap: 16px;
+}
+.cocial-media-item {
+	width: 40px;
+	height: 40px;
+}
+.social-media-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-media-icon {
+	color: #fff;
+}
+.social-media-link:hover,
+.social-media-link:focus {
+	background-color: #31d0aa;
+}
+/* _____________________________________________________________________________________________________________________________ */
+
+
+.subscribe-form-item {
+	display: flex;
+	justify-content: space-between;
+	width: 453px;
+}
+
+
+.subscribe-title {
+	margin-bottom: 16px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #fff;
+}
+/* to do e-mail white */
+.subscribe-field-item ::placeholder {
+	color: #fff;
+}
+
+.subscribe-title-item {
+	color: #ffffff;
+	background-color: #4d5ae5;
+	border-radius: 4px;
+	border: none;
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-title-item:hover, .subscribe-title-item:focus {
+	background-color: var(--hover-link-color);
+}
+.subscribe-field {
+	display: flex;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 8px;
+	padding-bottom: 4px;
+}
+/* to moov icon to the right */
+.subscribe-style-title {
+	margin-right: 16px;
+}
+
+.mail-title > ::placeholder {
+	color: #fff;
+	background-color: #4d5ae5;
+}
+
+.email-text {
+	
+	color: #ffffff;
+	width: 264px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.04em;
+	text-align: left;
+    border: 1px solid #fff;
+	border-radius: 4px;
+	background-color: var(--primary-title-color);
+}
+
+/* to moove subscribe block to the right */
+.social-media {
+	margin-right: 80px;
+}
+/* ----------------------------------------------------------animation---------------------------- */
+
+.navigation-links .active::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	background-color: var(--hover-link-color); /* change to the desired color */
+	margin-top: 5px;
+	/* adjust to the desired distance from the link */
+	border-radius: 2px;
+	position: relative;
+	bottom: -14.5px;
+}
+nav .link.active {
+	color: var(--hover-link-color);
+}
+
+.backdrop {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 47, 66, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	transition: opacity, visibility;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+	width: 408px;
+	height: 576px;
+	border-radius: 4px;
+	background-color: #fcfcfc;
+	padding: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-close {
+	width: 24px;
+	height: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #e7e9fc;
+
+	border-radius: 50%;
+	display: flex;
+	margin-left: auto;
+	/* to do crist in the middle */
+	align-items: center;
+	justify-content: center;
+	/*add transition to border color   */
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	margin-bottom: 24px;
+}
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.modal-close:hover {
+	border-color: var(--hover-link-color);
+	background-color: var(--hover-link-color);
+}
+
+/* this we need to change cross color during closing the window  */
+.modal-close:hover .modal-close-btn-icon {
+	fill: #f4f4fd;
+}
+/* ---------------------------------filling modal window--------------------------------------------------- */
+.modal-window-title {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	text-align: center;
+	font-weight: 500;
+
+	margin-bottom: 16px;
+}
+.form-input {
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid rgba(46, 47, 66, 0.2);
+	color: #2E2F4266 0.4;
+}
+
+.form-input:hover, .form-input:focus, .comment-input:hover, .comment-input:focus {
+	border-color: #4D5AE5;
+}
+
+
+.agriment-item {
+	color: #8E8F99;
+
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14px;
+	letter-spacing: 0.04em;
+	text-align: left;	
+
+	display: flex;
+    align-items: center;
+}
+
+.form-title {
+color: #8E8F99;
+
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.04em;
+text-align: left;
+}
+
+
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 120px;
+	border: 1px solid rgba(46, 47, 66, 0.2);
+	border-radius: 4px;
+	padding: 8px 16px;
+}
+
+.send-button-item {
+	margin-top: 24px;
+}
+
+/* put button in the middle */
+.form-send-button {
+display: flex;
+justify-content: center;
+}
+
+/* change input text style */
+.modal-form input {
+
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.17;
+letter-spacing: 0.04em;
+text-align: left;
+padding-left: 38px;
+padding-right: 16px;
+}
+
+
+.form-logo-item {
+	position: absolute;
+	display: inline-block;
+}
+/* --------put icon inside input ----------------- */
+.input-with-icon {
+	position: relative;
+  }
+
+  .form-logo-item {
+	position: absolute;
+	top: 50%;
+	left: 19px;
+	transform: translateY(-50%);
+	fill: #2E2F42;
+  }
+  .form-logo-item-mail {
+	left: 17.5px;
+  }
+  
+  
+
+  .form-input:focus ~ .form-logo-item {
+	fill: #4D5AE5;
+  }
+  
+  /*________________________________________________ */
+
+  /* ---------------------CHECKBOX------------------------------------------------ */
+  /* standart checkbox del */
+  .checkbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	
+	position: absolute;
+
+/* to put checkbox in the correct position */
+
+	top: 50%;
+    transform: translateY(-50%);
+	margin-top: 9px;
+ }
+  
+.agriment-item::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #2E2F42;
+	border-radius: 2px;
+	margin-right: 8px;
+
+	/* transition-property: border, background-color, background-image;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.checkbox:checked + .agriment-item::before {
+	background-color:  #404BBF;
+	border: 1px solid  #404BBF;
+	background-size: contain;
+	outline: none;
+	background-image: url(../images/boxfinal1.svg);
+}
+ .privat-policy-item {
+	color: #4D5AE5;
+	margin-left: 4px;
+
+	position: relative;
+	}
+
+/* -------------------to set line under Privacy Policy-------------------------- */
+  
+  .privat-policy-item::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 2px;           
+	width: 100%;
+	height: 0.5px;
+	background-color: #4D5AE5;
+  }
