@@ -1,0 +1,21 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1158px;
+	}
+
+	.address-link {
+		display: flex;
+	}
+	.addess-link-item:not(:last-child) {
+		margin-right: 40px;
+	}
+
+	.logo-head {
+		margin-right: 76px;
+	}
+
+	.header-line {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+}

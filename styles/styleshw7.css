@@ -1,0 +1,138 @@
+:root {
+	--primary-title-color: #2e2f42;
+	--primary-text-color: #434455;
+	--secondary-background-color: #2e2f42;
+	--hover-link-color: #404bbf;
+}
+/* --------styles reset------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.section {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+/* due to this we can cancell default outline !!!!!!!!!!!!!! */
+input,
+textarea {
+	outline: none;
+}
+/* ___________________________________________________________ */
+/* --------------------------------- */
+
+body {
+	background-color: #fff;
+	color: #434455;
+
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	list-style: none;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+/* -------------------------------------------------------head and footer---------------------------------------------- */
+/* ---------logo head------------ */
+.logo-head,
+.logo-footer {
+	font-family: Raleway;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
+	letter-spacing: 0.03em;
+}
+.logo-head {
+	color: var(--primary-title-color);
+}
+/* ------------logo footer---------- */
+.logo-footer {
+	color: #f4f4fd;
+}
+.logo-web {
+	color: #4d5ae5;
+}
+
+/* delating outlines of the links  */
+a {
+	text-decoration: none;
+}
+/* ---------- */
+
+.navigation-links .link {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-title-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-links .link:focus,
+.navigation-links .link:hover {
+	color: var(--hover-link-color);
+}
+
+.border-header {
+	border-bottom: 1px solid #e7e9fc;
+}
+
+/* changing address font and color */
+.address {
+	font-style: normal;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+
+	color: var(--primary-text-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address:focus,
+.address:hover {
+	color: var(--hover-link-color);
+}
+/* _____________________________________________________________________________________________________________________________________ */
+
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.header-line {
+	display: flex;
+	/* align-items: center; */
+	/* padding-top: 24px;
+	padding-bottom: 24px; */
+}
