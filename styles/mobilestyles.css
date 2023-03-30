@@ -67,6 +67,16 @@
 		z-index: 1000;
 
 		background-color: #fcfcfc;
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 500ms linear visibility 500ms linear;
+	}
+	.mobile-menu.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
 	}
 
 	/* .mobile-menu-conainer {
@@ -75,6 +85,8 @@
 		padding-right: 24px;
 	} */
 	.mobile-menu-conainer {
+		display: flex;
+		flex-direction: column;
 		position: relative;
 		padding-left: 40px;
 		padding-right: 24px;
@@ -107,7 +119,8 @@
 	.card-social-list-mobile {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 48px;
+		margin-top: auto;
+		padding-bottom: 40px;
 	}
 	.card-social-list-mobile:last-child {
 		padding-right: 40px;
@@ -115,5 +128,33 @@
 
 	.nav-link-item-mobile:not(:last-child) {
 		margin-bottom: 40px;
+	}
+
+	.nav-link-item-mobile {
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 0.9;
+		letter-spacing: 0.02em;
+		text-align: left;
+		color: #2e2f42;
+	}
+	.address-mobile-phone {
+		/* padding-right: 35px; */
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 0.9;
+		letter-spacing: 0.02em;
+		text-align: left;
+
+		color: #4d5ae5;
+		/* margin-top: 284px; */
+		/* margin-bottom: 40px; */
+	}
+	.address-mail-mobile {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+		text-align: left;
 	}
 }
