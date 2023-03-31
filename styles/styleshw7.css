@@ -136,3 +136,27 @@ a {
 	/* padding-top: 24px;
 	padding-bottom: 24px; */
 }
+
+/* ___________________copy from previous css (social icons)_______________________________ */
+.card-social-item {
+	width: 40px;
+	height: 40px;
+}
+.card-social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #4d5ae5;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-social-link:hover,
+.card-social-link:focus {
+	background-color: #404bbf;
+}
+/* ________________________________________________________________________________ */

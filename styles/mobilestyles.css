@@ -119,7 +119,7 @@
 	.card-social-list-mobile {
 		display: flex;
 		justify-content: space-between;
-		margin-top: auto;
+		margin-top: 48px;
 		padding-bottom: 40px;
 	}
 	.card-social-list-mobile:last-child {
@@ -147,8 +147,6 @@
 		text-align: left;
 
 		color: #4d5ae5;
-		/* margin-top: 284px; */
-		/* margin-bottom: 40px; */
 	}
 	.address-mail-mobile {
 		font-size: 20px;
@@ -156,5 +154,11 @@
 		line-height: 24px;
 		letter-spacing: 0.02em;
 		text-align: left;
+	}
+	.address-link-mobile {
+		margin-top: auto;
+	}
+	.addess-link-item-mobile:last-child {
+		margin-top: 40px;
 	}
 }
