@@ -18,4 +18,59 @@
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
+	/* -----------------------------------------------------section 2------------------------------------------------------------ */
+	.title-list,
+	.visual-list {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 0;
+		gap: 24px;
+	}
+	.symbol-list-item {
+		display: flex;
+		height: 112px;
+		width: 264px;
+		background-color: #f4f4fd;
+		justify-content: center;
+		align-items: center;
+		border-radius: 4px;
+		margin-bottom: 8px;
+	}
+	/* _____________________________________________________________________________________________________________________________ */
+
+	/* ----------------------------------------------------------section 3----------------------------------------------------------- */
+	.section-3 {
+		display: block;
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+	.our-work-title {
+		margin-bottom: 72px;
+		text-align: center;
+
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+	}
+
+	/* ____________________________________________________________________________________________________________________________ */
+
+	/* --------------------------------------------------------------section 4---------------------------------------------------- */
+
+	.card-titles {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+	}
+	.container-fourth-section {
+		padding-top: 120px;
+		padding-bottom: 120px;
+		padding-left: 156px;
+		padding-right: 156px;
+	}
+	.fourth-section {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
 }
