@@ -23,7 +23,8 @@
 	.visual-list {
 		display: flex;
 		justify-content: space-between;
-		padding-left: 0;
+		/* padding-left: 16px;
+		padding-right: 16px; */
 		gap: 24px;
 	}
 	.symbol-list-item {
@@ -72,5 +73,10 @@
 	.fourth-section {
 		max-width: 1440px;
 		margin: 0 auto;
+	}
+
+	.team-card-sign {
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 }
