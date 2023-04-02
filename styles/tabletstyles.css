@@ -36,6 +36,16 @@
 	.mobile-menu {
 		display: none;
 	}
+	.customers-list-item {
+		width: 168px;
+		height: 88px;
+		border: 1px solid #8e8f99;
+		border-radius: 4px;
+
+		transition-property: color, border-color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
 }
 /* 88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 */
 
@@ -69,7 +79,7 @@
 	.symbol-list-item {
 		display: none;
 	}
-	h3 {
+	.title-list h3 {
 		font-style: medium;
 		font-size: 36px;
 		font-weight: 700;
@@ -113,4 +123,13 @@
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
+	.customers-list {
+		flex-basis: calc((100%-48) / 3);
+	}
+
+	/* ----------------------section 5----------------------to set three in a row */
+	.customers-list-item {
+		flex-basis: calc(33.33% - 24px);
+	}
+	/* ______________________________________________________________________ */
 }

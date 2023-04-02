@@ -70,13 +70,67 @@
 		padding-left: 156px;
 		padding-right: 156px;
 	}
-	.fourth-section {
+	/* .fourth-section {
 		max-width: 1440px;
 		margin: 0 auto;
-	}
+	} */
 
 	.team-card-sign {
 		padding-left: 16px;
 		padding-right: 16px;
 	}
+
+	/* ------------------------------------------------section 5------------------------------------------------- */
+	.section-fifth {
+		padding-top: 130px;
+		padding-bottom: 120px;
+	}
+
+	/* .customers-title {
+		text-align: center;
+		margin-bottom: 72px;
+	} */
+
+	/* .customers-list {
+		display: flex;
+		justify-content: space-between;
+	} */
+	/* .customers-list-item {
+		width: 168px;
+		height: 88px;
+		border: 1px solid #8e8f99;
+		border-radius: 4px;
+
+		transition-property: color, border-color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	} */
+	/* .customers-list-link {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		color: #8e8f99;
+
+		transition-property: color;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	} */
+
+	.customers-list-item:hover,
+	.customers-list-item:hover .customers-list-link {
+		border-color: #404bbf;
+		color: #404bbf;
+		/* fill: #404bbf; */
+	}
+	.customers-list-item:focus-within .customers-list-link {
+		border-color: #404bbf;
+		color: #404bbf;
+	}
+
+	/* .customers-list-icon {
+		fill: currentColor;
+	} */
+	/* _______________________________________________end of section 5___________________________________________________________ */
 }
