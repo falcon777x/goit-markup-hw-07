@@ -181,6 +181,10 @@ footer {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-media-link:hover,
+.social-media-link:focus {
+	background-color: #31d0aa;
+}
 .social-media-icon {
 	color: #fff;
 }

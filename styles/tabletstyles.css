@@ -123,13 +123,40 @@
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
-	.customers-list {
-		flex-basis: calc((100%-48) / 3);
-	}
 
 	/* ----------------------section 5----------------------to set three in a row */
-	.customers-list-item {
-		flex-basis: calc(33.33% - 24px);
+	.customers-list {
+		width: 552px;
+		margin-left: auto;
+		margin-right: auto;
 	}
+	.section-fifth {
+		padding-top: 96px;
+		padding-bottom: 24px;
+	}
+
 	/* ______________________________________________________________________ */
+
+	.footer-line {
+		padding-left: 108px;
+		/* padding-bottom: 108px; */
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.logo-and-text {
+		margin-right: 24px;
+		width: 263px;
+		margin-right: 24px;
+	}
+	.footer-text {
+		margin-top: 17px;
+		margin-bottom: 72px;
+	}
+
+	.social-media-title {
+		margin-bottom: 16px;
+	}
+	.subscribe-title-item {
+		margin-left: 24px;
+	}
 }
