@@ -186,11 +186,11 @@ footer {
 }
 
 /* ----------------------------------subskribe------------------------------------------ */
-.subscribe-form-item {
+/* .subscribe-form-item {
 	display: flex;
 	justify-content: space-between;
 	width: 453px;
-}
+} */
 
 .subscribe-title {
 	margin-bottom: 16px;
