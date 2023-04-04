@@ -15,20 +15,6 @@
 		bottom: -14.5px;
 	}
 
-	.hero-section-title {
-		font-family: Roboto;
-		margin-bottom: 48px;
-		margin-top: 0;
-		min-width: 496px;
-		color: #fff;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 56px;
-		line-height: 1.07;
-		letter-spacing: 0.02em;
-		text-align: center;
-	}
-
 	/* ---------------------------------------------section 4----------------------------------------------------------- */
 	.fourth-section {
 		background-color: #f4f4fd;
@@ -283,6 +269,26 @@
 	.addess-link-item-mobile:last-child {
 		margin-top: 40px;
 	}
+	/* ----------------------------------modal window------------------------- */
+	.modal {
+		width: 100%;
+		max-width: 392px;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	/* ----------------------------------the end of modal window------------------ */
+
+	.hero-section-title {
+		font-family: Roboto;
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		text-align: center;
+
+		min-width: 280px;
+	}
+
 	/* ----------------------------------------------------------section 2---------------------------------------------------- */
 	.symbol-list-item {
 		display: none;

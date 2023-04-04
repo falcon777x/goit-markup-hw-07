@@ -18,6 +18,23 @@
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
+	.hero-section {
+		padding-top: 188px;
+		padding-bottom: 188px;
+	}
+	.hero-section-title {
+		font-family: Roboto;
+		margin-bottom: 48px;
+		margin-top: 0;
+		min-width: 496px;
+		color: #fff;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 1.07;
+		letter-spacing: 0.02em;
+		text-align: center;
+	}
 	/* -----------------------------------------------------section 2------------------------------------------------------------ */
 	.title-list,
 	.visual-list {
@@ -36,6 +53,9 @@
 		align-items: center;
 		border-radius: 4px;
 		margin-bottom: 8px;
+	}
+	.section-2 {
+		padding-top: 120px;
 	}
 	/* _____________________________________________________________________________________________________________________________ */
 
