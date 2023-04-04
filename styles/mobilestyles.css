@@ -2,18 +2,18 @@
 	.container {
 		max-width: 428px;
 	}
-	.navigation-links .active::after {
+	/* .navigation-links .active::after {
 		content: "";
 		display: block;
 		width: 100%;
 		height: 4px;
-		background-color: var(--hover-link-color); /* change to the desired color */
+		background-color: var(--hover-link-color);
 		margin-top: 5px;
-		/* adjust to the desired distance from the link */
+		
 		border-radius: 2px;
 		position: relative;
 		bottom: -14.5px;
-	}
+	} */
 
 	/* ---------------------------------------------section 4----------------------------------------------------------- */
 	.fourth-section {
@@ -141,28 +141,14 @@
 		background-color: transparent;
 		padding: 0;
 		line-height: 0;
-		/* border: none; */
-
-		/* background-color: aqua; */
-
-		/* display: inline-block;
-		stroke-width: 0;
-		stroke: tomato;
-		fill: tomato;
-		color: aquamarine; */
+		border: none;
 	}
 	.mobile-menu-open-icon {
-		fill: tomato;
+		fill: rgba(46, 47, 66, 1);
 	}
 	button {
 		cursor: pointer;
 	}
-
-	/* button,
-	input[type="button"],
-	input[type="submit"] {
-		cursor: pointer;
-	} */
 
 	/* ____________________________mobile menu________________________________________ */
 	.mobile-menu {
@@ -204,6 +190,8 @@
 	}
 
 	.mobile-menu-close-button {
+		height: 24px;
+		width: 24px;
 		position: absolute;
 		top: 24px;
 		right: 24px;
@@ -214,6 +202,10 @@
 
 		background-color: rgba(231, 233, 252, 1);
 		border-radius: 50%;
+		/* to do crist in the middle */
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.mobile-menu-close-icon {
@@ -221,9 +213,36 @@
 		/* fill: aqua; */
 	}
 
-	/* .address-link-mobile {
-		
-	} */
+	/* _________________________________________________________________ */
+	.privat-policy-item {
+		color: #4d5ae5;
+		margin-left: 4px;
+
+		/* position: relative; */
+	}
+	.privat-policy-item::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 2px;
+		width: 100%;
+		height: 0.5px;
+		background-color: #4d5ae5;
+	}
+
+	/* -------------------to set line under Privacy Policy-------------------------- */
+
+	.privat-policy-item::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 2px;
+		width: 100%;
+		height: 0.5px;
+		background-color: #4d5ae5;
+	}
+
+	/* _________________________________________________________________ */
 
 	.card-social-list-mobile {
 		display: flex;
@@ -275,6 +294,7 @@
 	.modal {
 		width: 100%;
 		max-width: 392px;
+		overflow-y: auto;
 	}
 	/* ----------------------------------the end of modal window------------------ */
 
@@ -430,6 +450,7 @@
 	.customers-list-icon {
 		fill: currentColor;
 	}
+
 	.customers-title {
 		font-size: 36px;
 		font-weight: 700;
@@ -455,7 +476,7 @@
 	}
 	.section-fifth {
 		padding-top: 96px;
-		padding-bottom: 96px;
+		padding-bottom: 24px;
 	}
 
 	/* ------------------------------------------------footer------------------------------------------------------------------ */
@@ -548,5 +569,16 @@
 		width: calc(100% - 30px);
 		min-width: 290px;
 		max-width: 398px;
+	}
+}
+
+/* 888888888888888888888888888888888888888888888888888888888888888888888888888 */
+@media screen and (min-width: 0) and (max-width: 438px) {
+	.address-mobile-phone {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		text-align: left;
 	}
 }

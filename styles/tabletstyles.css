@@ -27,7 +27,7 @@
 		/* adjust to the desired distance from the link */
 		border-radius: 2px;
 		position: relative;
-		bottom: -14.5px;
+		bottom: -17px;
 	}
 	nav .link.active {
 		color: var(--hover-link-color);
@@ -129,6 +129,17 @@
 		width: 552px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.customers-list-item:hover,
+	.customers-list-item:hover .customers-list-link {
+		border-color: #404bbf;
+		color: #404bbf;
+		/* fill: #404bbf; */
+	}
+	.customers-list-item:focus-within .customers-list-link {
+		border-color: #404bbf;
+		color: #404bbf;
 	}
 	.section-fifth {
 		padding-top: 96px;

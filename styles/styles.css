@@ -412,6 +412,7 @@ footer {
 }
 
 .agriment-item {
+	margin-top: 10px;
 	color: #8e8f99;
 
 	font-size: 12px;
@@ -532,6 +533,7 @@ textarea {
 .privat-policy-item {
 	color: #4d5ae5;
 	margin-left: 4px;
+	/* border-bottom: 1px solid #4d5ae5; */
 
 	position: relative;
 }
