@@ -46,6 +46,7 @@ body {
 	letter-spacing: 0.02em;
 
 	list-style: none;
+	margin: 0;
 }
 
 ul {
@@ -120,9 +121,23 @@ a {
 .address:hover {
 	color: var(--hover-link-color);
 }
-/* -------------------------------------------------------------------------------------------------------------------- */
+/* _____________________________________________________________________________________________________________________________________ */
 
-/* ----------------------------------------------------hero section---------------------------------------------------- */
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.header-line {
+	display: flex;
+	/* align-items: center; */
+	/* padding-top: 24px;
+	padding-bottom: 24px; */
+}
+
+/* ---------------------------------------------HERO SECTION------------------------------------------- */
 .hero-section {
 	background-color: var(--secondary-background-color);
 	text-align: center;
@@ -131,6 +146,8 @@ a {
 	background-position: center;
 	max-width: 1440px;
 	margin: 0 auto;
+	padding-top: 112px;
+	padding-bottom: 112px;
 }
 
 .hero-section-title {
@@ -174,430 +191,91 @@ a {
 	background-color: var(--hover-link-color);
 }
 
-button,
-input[type="button"],
-input[type="submit"] {
-	cursor: pointer;
-}
-
-/* ----------------------------------------------------------------------------------------------------------------- */
-h3 {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-
-	color: var(--primary-title-color);
-}
-
-h2 {
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 1.1;
-	letter-spacing: 0.02em;
-
-	color: var(--primary-title-color);
-}
-/* section 4 */
-.fourth-section {
-	background-color: #f4f4fd;
-}
-.team-card {
-	background-color: #fff;
-}
-
-/* -------------------------------portfolio------------------------------------ */
-
-.portfolio-title {
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1.2;
-	letter-spacing: 0.02em;
-
-	color: var(--primary-title-color);
-}
-
-/* doing overlay window on card --------------------*/
-.portfolio-card-item {
-	position: relative;
-	overflow: hidden;
-}
-
-.portfolio-card-overlay {
-	background-color: #4d5ae5;
-	color: #f4f4fd;
-
-	padding: 40px 32px;
-	position: absolute;
+/* ------------------------------------------------modal vindow--------------------------------------------------- */
+.backdrop {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(46, 47, 66, 0.4);
+	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100%;
-	width: 100%;
-	transform: translateY(100%);
-	transition: transform 0.25s linear;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	overflow: auto;
-}
 
-/* ------------------------------------------------- */
-
-.kind-of-content {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-
-	color: #434455;
-}
-
-.filters-buttons {
-	padding: 12px 24px;
-	font-family: Roboto;
-	background-color: #f4f4fd;
-	color: #4d5ae5;
-	border-color: #e7e9fc;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 4px;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.04em;
-
-	transition-property: color, border-color, background-color, box-shadow;
+	transition: opacity, visibility;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal {
+	max-width: 408px;
+	/* height: 576px; */
+	max-height: 576px;
+	border-radius: 4px;
+	background-color: #fcfcfc;
+	padding: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-close {
+	width: 24px;
+	height: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #e7e9fc;
 
-.filters-buttons:focus,
-.filters-buttons:hover {
-	background-color: var(--hover-link-color);
-	color: #fff;
-	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 50%;
+	display: flex;
+	margin-left: auto;
+	/* to do crist in the middle */
+	align-items: center;
+	justify-content: center;
+	/*add transition to border color   */
+	transition-property: border-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
+	margin-bottom: 24px;
+}
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
 
-	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+.modal-close:hover {
 	border-color: var(--hover-link-color);
+	background-color: var(--hover-link-color);
 }
 
-/* -------------------FLEX-------------------- */
-/* .container {
-	width: 1158px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin: 0 auto;
-} */
+/* this we need to change cross color during closing the window  */
+.modal-close:hover .modal-close-btn-icon {
+	fill: #f4f4fd;
+}
+/* ________________________________________________the end of modal window_________________________________________ */
+/* _____________________________________________________________________________________________________ */
 
-.our-work-title {
-	text-align: center;
-	margin-bottom: 72px;
-	margin-top: 0;
+.section-3 {
+	display: none;
 }
 
-.fourth-section {
-	padding-top: 120px;
-	padding-bottom: 120px;
+/* ___________________copy from previous css (social icons)_______________________________ */
+.team-card {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
 }
-
-.our-team-title {
-	text-align: center;
-	margin-bottom: 72px;
-	margin-top: 0;
-}
-
-.footer-text {
-	width: 264px;
-}
-
-.logo-footer {
-	display: block;
-	margin-bottom: 16px;
+h3 {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.02em;
+	text-align: left;
 }
 
 footer {
 	background-color: var(--secondary-background-color);
 	color: #e7e9fc;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-.logo-head {
-	display: block;
-	padding-bottom: 24px;
-	padding-top: 24px;
-	margin-left: 0;
-	margin-right: 36px;
-}
-/* -------------flex start--------- */
-
-.navigation-links {
-	display: flex;
-}
-
-.nav-link-item {
-	display: block;
-	padding-top: 24px;
-	padding-bottom: 14px;
-	/* i have changed it from 24px to 14px to put blue-line on hero section */
-}
-
-.nav-link-item:last-child {
-	margin-right: 0;
-}
-.nav-link-item:not(:last-child) {
-	margin-right: 40px;
-}
-
-.address-link {
-	display: flex;
-}
-.addess-link-item:not(:last-child) {
-	margin-right: 40px;
-}
-.addess-link-item {
-	display: block;
-	padding-top: 24px;
-	padding-bottom: 24px;
-}
-
-/* .header-line {
-	display: flex;
-} */
-
-nav {
-	display: flex;
-	align-items: center;
-}
-/* --------------------------------------------------section 2-3------------------------------------------------ */
-.title-list,
-.visual-list {
-	display: flex;
-	justify-content: space-between;
-	padding-left: 0;
-	gap: 24px;
-}
-/* -----------------SVG icons section  2---------------------- */
-
-.symbol-list-item {
-	display: flex;
-	height: 112px;
-	width: 264px;
-	background-color: #f4f4fd;
-	justify-content: center;
-	align-items: center;
-	border-radius: 4px;
-	margin-bottom: 8px;
-}
-
-/* ----------------------------------------------------------- */
-.main-paragraph {
-	width: 264px;
-}
-
-.card-titles {
-	display: flex;
-	justify-content: space-between;
-	gap: 24px;
-	padding-left: 0;
-}
-
-.team-card h3 {
-	text-align: center;
-	margin-bottom: 8px;
-}
-
-.team-card p {
-	text-align: center;
-}
-
-.title-list h3 {
-	margin-bottom: 8px;
-}
-
-/* ---------------portfolio flex----------------- */
-.filters {
-	display: flex;
-	margin-bottom: 72px;
-	gap: 24px;
-	justify-content: center;
-}
-
-.portfolio-title {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 0;
-	row-gap: 48px;
-}
-
-.portfolio-title h2 {
-	margin-bottom: 8px;
-}
-.portfolio-sign {
-	border-left: 1px solid #e7e9fc;
-	border-right: 1px solid #e7e9fc;
-	border-bottom: 1px solid #e7e9fc;
-	padding-top: 32px;
-	padding-bottom: 32px;
-}
-
-.portfolio-card-item-list:hover .portfolio-card-overlay {
-	transform: translateY(0);
-}
-
-.portfolio-card-item-list:hover,
-.portfolio-card-item-list:focus {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.portfolios {
-	display: block;
-}
-
-/* ------------------------------------------------------------------------------------------------------ */
-address {
-	margin-left: auto;
-}
-.hero-section {
-	padding-top: 188px;
-	padding-bottom: 188px;
-}
-
-.section-2 {
-	padding-top: 120px;
-}
-
-.section-3 {
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-.section-portfolio {
-	padding-bottom: 120px;
-	padding-top: 96px;
-}
-
-.portfolio-sign {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	padding-left: 16px;
-}
-.team-card-sign {
-	padding-top: 32px;
-	/* padding-bottom: 8px; */
-}
-.team-card {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-	border-radius: 0px 0px 4px 4px;
-}
-/* --------------------------------------svg sectio4------------------------------------- */
-
-.card-social-list {
-	display: flex;
-	gap: 24px;
-	justify-content: center;
-	margin-top: 8px;
-	padding-bottom: 32px;
-}
-.card-social-item {
-	width: 40px;
-	height: 40px;
-}
-.card-social-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background-color: #4d5ae5;
-
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.card-social-link:hover,
-.card-social-link:focus {
-	background-color: #404bbf;
-}
-
-/* ---------------------------------------------section fifth-------------------------------------- */
-.section-fifth {
-	padding-top: 130px;
-	padding-bottom: 120px;
-}
-
-.customers-title {
-	text-align: center;
-	margin-bottom: 72px;
-}
-
-.customers-list {
-	display: flex;
-	justify-content: space-between;
-}
-.customers-list-item {
-	width: 168px;
-	height: 88px;
-	border: 1px solid #8e8f99;
-	border-radius: 4px;
-
-	transition-property: color, border-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.customers-list-link {
-	display: flex;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-	align-items: center;
-	color: #8e8f99;
-
-	transition-property: color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-list-item:hover,
-.customers-list-item:hover .customers-list-link {
-	border-color: #404bbf;
-	color: #404bbf;
-	/* fill: #404bbf; */
-}
-.customers-list-item:focus-within .customers-list-link {
-	border-color: #404bbf;
-	color: #404bbf;
-}
-
-.customers-list-icon {
-	fill: currentColor;
-}
-
-/* --------------------------------------footer section------------------------------------ */
-
-.footer-line {
-	display: flex;
-}
-.social-media {
-	margin-left: 120px;
-}
-.social-media-title {
-	margin-bottom: 16px;
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	color: #fff;
+	/* padding-top: 100px;
+	padding-bottom: 100px; */
 }
 .social-media-list {
 	display: flex;
@@ -614,20 +292,26 @@ address {
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: #4d5ae5;
 
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-icon {
-	color: #fff;
-}
 .social-media-link:hover,
 .social-media-link:focus {
 	background-color: #31d0aa;
 }
-/* _____________________________________________________________________________________________________________________________ */
+.social-media-icon {
+	color: #fff;
+}
+
+/* ----------------------------------subskribe------------------------------------------ */
+/* .subscribe-form-item {
+	display: flex;
+	justify-content: space-between;
+	width: 453px;
+} */
 
 .subscribe-title {
 	margin-bottom: 16px;
@@ -700,85 +384,6 @@ address {
 	background-color: var(--primary-title-color);
 }
 
-/* to moove subscribe block to the right */
-.social-media {
-	margin-right: 80px;
-}
-/* ----------------------------------------------------------animation---------------------------- */
-
-.navigation-links .active::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 4px;
-	background-color: var(--hover-link-color); /* change to the desired color */
-	margin-top: 5px;
-	/* adjust to the desired distance from the link */
-	border-radius: 2px;
-	position: relative;
-	bottom: -14.5px;
-}
-nav .link.active {
-	color: var(--hover-link-color);
-}
-
-.backdrop {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(46, 47, 66, 0.4);
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	transition: opacity, visibility;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal {
-	width: 408px;
-	height: 576px;
-	border-radius: 4px;
-	background-color: #fcfcfc;
-	padding: 24px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.modal-close {
-	width: 24px;
-	height: 24px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #e7e9fc;
-
-	border-radius: 50%;
-	display: flex;
-	margin-left: auto;
-	/* to do crist in the middle */
-	align-items: center;
-	justify-content: center;
-	/*add transition to border color   */
-	transition-property: border-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-	margin-bottom: 24px;
-}
-.is-hidden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-}
-
-.modal-close:hover {
-	border-color: var(--hover-link-color);
-	background-color: var(--hover-link-color);
-}
-
-/* this we need to change cross color during closing the window  */
-.modal-close:hover .modal-close-btn-icon {
-	fill: #f4f4fd;
-}
 /* ---------------------------------filling modal window--------------------------------------------------- */
 .modal-window-title {
 	font-family: Roboto;
